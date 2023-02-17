@@ -1,0 +1,80 @@
+.bars-menu{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.bars-menu span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    margin-top: 6px;
+
+    transform-origin: 0px 100%;
+    transition: all 500ms;
+}
+
+.bars-menu__line1--active{
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.bars-menu__line3--active{
+    transform: rotate(-45deg) translate(-4px, 2px);}
+
+.bars-menu__line2--active{
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.menu{
+    opacity: 1;
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 80%;
+    height: 100vh;
+
+    padding-top: 100px;
+
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+}
+
+.menu--active{
+    display: block;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    opacity: 1;
+
+    padding-top: 100px;
+
+    width: 80%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    transform: translateX(0%);
+    transition: all 0.5s ease;
+}
+
+.menu__item{
+    margin-bottom: 32px;
+    opacity: 0;
+    z-index: -1;
+
+    font-size: 18px;
+}
+
+
+.menu--active .menu__item{
+    opacity: 1;
+}
