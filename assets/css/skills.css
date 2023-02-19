@@ -1,6 +1,8 @@
 .skills{
     display: flex;
     flex-direction: column;
+
+    background: var(--background1);
 }
 
 .skills__grid{

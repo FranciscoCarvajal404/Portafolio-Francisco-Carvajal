@@ -1,0 +1,94 @@
+.experiencia{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    background: var(--background1);
+}
+
+.experiencia__titulo-principal{
+    font-size: 1.9rem;
+    font-weight: bold;
+
+    align-self: center;
+
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.experiencia__card{
+    width: 90%;
+
+    margin: 16px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.experiencia__img{
+    width: 100%;
+
+    align-self: center;
+
+    margin: 16px 0;
+
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.experiencia__titulo{
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    text-align: center;
+
+    margin-top: 8px;
+}
+
+.experiencia__descripcion{
+    margin-top: 8px;
+
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.experiencia__botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+    margin-top: 8px;
+    margin-bottom: 32px;
+    gap: 16px;
+}
+
+.experiencia__btn--rep{
+    cursor: pointer;
+
+    padding: 8px 16px;
+
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid black;
+}
+
+.experiencia__btn--demo{
+    cursor: pointer;
+
+    padding: 8px 16px;
+
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    background: black;
+    border: 2px solid black;
+}

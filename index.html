@@ -12,12 +12,15 @@
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/menu.css">
-    <link rel="stylesheet" href="/assets/css/hero.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/sobre.css">
     <link rel="stylesheet" href="/assets/css/skills.css">
     <link rel="stylesheet" href="/assets/css/hobbies.css">
     <link rel="stylesheet" href="/assets/css/formacion.css">
     <link rel="stylesheet" href="assets/css/experiencia.css">
+    <link rel="stylesheet" href="assets/css/contacto.css">
+    <link rel="stylesheet" href="/assets/css/form.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="shortcut icon" href="/assets/img/francisco.png" type="image/x-icon">
     <title>Francisco Carvajal Villegas</title>
 </head>
@@ -38,9 +41,12 @@
         <nav class="menu">
             <ul class="menu__nav">
                 <li class="menu__item"><a href="#">Inicio</a></li>
-                <li class="menu__item"><a href="#">Acerca</a></li>
-                <li class="menu__item"><a href="#">Portafolio</a></li>
-                <li class="menu__item"><a href="#">Contacto</a></li>
+                <li class="menu__item"><a href="#sobre">Sobre mi</a></li>
+                <li class="menu__item"><a href="#skills">Skills</a></li>
+                <li class="menu__item"><a href="#hobbies">Hobbies</a></li>
+                <li class="menu__item"><a href="#formacion">Formación</a></li>
+                <li class="menu__item"><a href="#experiencia">Experiencia</a></li>
+                <li class="menu__item"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
 
@@ -55,22 +61,23 @@
 
     </header>
 
-    <section class="hero">
+    <main class="main">
 
-        <img src="/assets/img/yo.jpeg" alt="Francisco Carvajal" class="hero__logo">
-        <div class="hero__info">
-            <h1 class="hero__titulo">Hola, mi nombre es Francisco Carvajal Villegas, front-end developer</h1>
-            <p class="hero__descripcion">Actualmente formándome en física en la Benemérita Universidad Autónoma de Puebla y participando en el proyecto Oracle ONE en Alura Latam.</p>
+        <img src="/assets/img/yo.jpeg" alt="Francisco Carvajal" class="main__logo">
+        <div class="main__info">
+            <h1 class="main__titulo">Hola, mi nombre es Francisco Carvajal Villegas, front-end developer</h1>
+            <p class="main__descripcion">Actualmente formándome en física en la Benemérita Universidad Autónoma de Puebla y participando en el proyecto Oracle ONE en Alura Latam.</p>
         </div>
-        <div class="hero__redes">
-            <a href="https://github.com/FranciscoCarvajal404" target="_blank"><img src="/assets/img/github.svg" alt="GitHub" class="hero-redes__img"></a>
+        <div class="main__redes">
+            <a href="https://github.com/FranciscoCarvajal404" target="_blank"><img src="/assets/img/github.svg" alt="GitHub" class="main-redes__img"></a>
 
-            <a href="https://www.linkedin.com/in/francisco-carvajal-villegas/" target="_blank"><img src="/assets/img/linkedin.svg" alt="LinkedIn" class="hero-redes__img"></a>
+            <a href="https://www.linkedin.com/in/francisco-carvajal-villegas/" target="_blank"><img src="/assets/img/linkedin.svg" alt="LinkedIn" class="main-redes__img"></a>
 
-            <a href="/assets/downloads/CV_FCV.pdf" target="_blank"><img src="/assets/img/resume.svg" alt="Resume" class="hero-redes__img"></a>
+            <a href="/assets/downloads/CV_FCV.pdf" target="_blank"><img src="/assets/img/resume.svg" alt="Resume" class="main-redes__img"></a>
         </div>
-    </section>
+    </main>
 
+    <div id="sobre"></div>
     <section class="sobre">
         <h2 class="sobre__titulo">Sobre mi</h2>
         <p class="sobre__descripcion">Actualmente tengo 21 años, soy desarrollador web con enfoque front-end y estudiante de física. <br> <br>
@@ -78,6 +85,7 @@
         Siempre estoy en constante aprendizaje, ya sean bootcamps, cursos, formaciones especiales, o leyendo artículos y ayudando a otras personas en foros.</p>
     </section>
 
+    <div id="skills"></div>
     <section class="skills">
         <h2 class="skills__titulo-principal">Skills</h2>
         <div class="skills__grid">
@@ -124,6 +132,7 @@
         </div>
     </section>
 
+    <div id="hobbies"></div>
     <section class="hobbies">
         <h2 class="hobbies__titulo-principal">Hobbies</h2>
         <div class="hobbies__grid">
@@ -154,6 +163,7 @@
         </div>
     </section>
 
+    <div id="formacion"></div>
     <section class="formacion">
         <h2 class="formacion__titulo-principal">Formación académica</h2>
         <div class="formacion__card">
@@ -174,6 +184,7 @@
         </div>
     </section>
 
+    <div id="experiencia"></div>
     <section class="experiencia">
         <h2 class="experiencia__titulo-principal">Experiencia profesional</h2>
         <div class="experiencia__card">
@@ -181,8 +192,8 @@
             <h2 class="experiencia__titulo">Primera página web</h2>
             <h3 class="experiencia__descripcion">Proyecto personal</h3>
             <div class="experiencia__botones">
-                <button class="experiencia btn">Repositorio</button>
-                <button class="experiencia btn">Ver demo</button>
+                <a href="https://github.com/FranciscoCarvajal404/Primera-web-personal"><button class="experiencia__btn--rep">Repositorio</button></a>
+                <a href="https://franciscocarvajal404.github.io/Primera-web-personal/"><button class="experiencia__btn--demo">Ver demo</button></a>
             </div>
         </div>
         <div class="experiencia__card">
@@ -190,18 +201,56 @@
             <h2 class="experiencia__titulo">Encriptador de texto</h2>
             <h3 class="experiencia__descripcion">Challenge Oracle</h3>
             <div class="experiencia__botones">
-                <button class="experiencia btn">Repositorio</button>
-                <button class="experiencia btn">Ver demo</button>
+                <a href="https://github.com/FranciscoCarvajal404/Alura-One-C1"><button class="experiencia__btn--rep">Repositorio</button></a>
+                <a href="https://franciscocarvajal404.github.io/Alura-One-C1/"><button class="experiencia__btn--demo">Ver demo</button></a>
             </div>
+        </div>
             <div class="experiencia__card">
-                <img src="/assets/img/portafolio.png" alt="Encriptador" class="experiencia__img">
+                <img src="/assets/img/portafolio.png" alt="Portafolio personal" class="experiencia__img">
                 <h2 class="experiencia__titulo">Portafolio</h2>
                 <h3 class="experiencia__descripcion">Challenge Oracle</h3>
                 <div class="experiencia__botones">
-                    <button class="experiencia btn">Repositorio</button>
+                    <a href="https://github.com/FranciscoCarvajal404/Portafolio-Francisco-Carvajal"><button class="experiencia__btn--rep">Repositorio</button></a>
                 </div>
-        </div>
+            </div>
     </section>
+
+    <div id="contacto"></div>
+    <section class="contacto">
+        <h2 class="contacto__titulo">Contacto</h2>
+        <form action="" class="contacto__form">
+            <div class="form__grupo" id="grupo1">
+                <label for="name" class="form__label" id="label1">Nombre</label>
+                <input type="text" id="name" name="name" class="form__input" itemid="input1"  autocomplete="off" required>
+            </div>
+            
+            <div class="form__grupo">
+                <label for="email" class="form__label focus">Mail</label>
+                <input type="email" id="email" name="mail" class="form__input"  autocomplete="off" required>
+            </div>
+
+            <div class="form__grupo">
+                <label for="mensaje" class="form__label">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form__input form__textarea" required></textarea>
+            </div>
+
+            <input type="submit" class="form__btn" id="enviarCorreo">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__redes">
+            <a href="https://github.com/FranciscoCarvajal404" target="_blank"><img src="/assets/img/github.svg" alt="GitHub" class="footer__img"></a>
+
+            <a href="https://www.linkedin.com/in/francisco-carvajal-villegas/" target="_blank"><img src="/assets/img/linkedin.svg" alt="LinkedIn" class="footer__img"></a>
+
+            <a href="/assets/downloads/CV_FCV.pdf" target="_blank"><img src="/assets/img/resume.svg" alt="Resume" class="footer__img"></a>
+        </div>
+        <h2 class="footer__titulo">
+            Desarrollado por Francisco Carvajal Villegas <br>
+            2023
+        </h2> 
+    </footer>
 
 </body>
 </html>
