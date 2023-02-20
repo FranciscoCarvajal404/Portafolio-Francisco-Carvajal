@@ -51,3 +51,7 @@ a{
 	color: white;
 	text-decoration: none;
 }
+
+input:focus, textarea:focus{
+	outline: none;
+}

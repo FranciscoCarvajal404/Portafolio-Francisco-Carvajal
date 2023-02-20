@@ -12,9 +12,15 @@
     align-items: center;
     justify-content: space-around;
 
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .footer__img{
     filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(279deg) brightness(112%) contrast(100%);
+    height: 38px;
+}
+
+.footer__img:hover{
+    filter: invert(54%) sepia(98%) saturate(5760%) hue-rotate(342deg) brightness(95%) contrast(105%);
+    transition: all 150ms;
 }

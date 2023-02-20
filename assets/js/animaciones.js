@@ -16,12 +16,14 @@ function animateBars(){
 
 
 
-//const label1 =  document.querySelector("#label1");
-//const grupo1 =  document.getElementById("#grupo1");
-//const input1 =  document.getElementById("#input1");
+const inputs = document.querySelectorAll('.form__input');
 
-//input1.addEventListener("focus", animateLabel1);
-
-//function animateLabel1(){
-//    grupo1.classList.toggle("focus");
-//}
+inputs.forEach(input => {
+    input.addEventListener('blur', (event) => {
+    if (event.target.value.length) {
+        event.target.classList.add("full");
+    } else {
+        event.target.classList.remove("full");
+    }
+});
+})

@@ -6,6 +6,7 @@
     justify-content: center;
 
     background: var(--background1);
+    padding: 16px 32px;
 }
 
 .experiencia__titulo-principal{
@@ -14,19 +15,27 @@
 
     align-self: center;
 
-    margin-top: 32px;
-    margin-bottom: 16px;
+    margin-top: 16px;
 }
 
 .experiencia__card{
     width: 90%;
 
-    margin: 16px auto;
+    margin: 32px auto;
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
 }
 
 .experiencia__img{
@@ -41,19 +50,23 @@
 }
 
 .experiencia__titulo{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
 
     text-align: center;
 
     margin-top: 8px;
+
+    align-self: flex-start;
 }
 
 .experiencia__descripcion{
     margin-top: 8px;
 
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
+
+    align-self: flex-start;
 }
 
 .experiencia__botones{
@@ -62,7 +75,7 @@
     justify-content: center;
     align-self: center;
 
-    margin-top: 8px;
+    margin-top: 16px;
     margin-bottom: 32px;
     gap: 16px;
 }
@@ -80,6 +93,13 @@
     border: 2px solid black;
 }
 
+.experiencia__btn--rep:hover{
+    border-color: #f73131;
+    color: #f73131;
+
+    transition: all 150ms;
+}
+
 .experiencia__btn--demo{
     cursor: pointer;
 
@@ -91,4 +111,36 @@
 
     background: black;
     border: 2px solid black;
+}
+
+.experiencia__btn--demo:hover{
+    background: #f73131;
+    border-color: #f73131;
+
+    transition: all 150ms;
+}
+
+@media screen and (min-width: 1024px) {
+    .experiencia__card{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .experiencia__card--reverse{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+
+    .experiencia__titulo, .experiencia__descripcion, .experiencia__botones{
+        align-self: flex-end;
+    }
+
+    .experiencia__titulo--reverse, .experiencia__descripcion--reverse, .experiencia__botones--reverse{
+        align-self: flex-start;
+    }
+
+    .experiencia__img{
+        width: 60%;
+    }
 }
