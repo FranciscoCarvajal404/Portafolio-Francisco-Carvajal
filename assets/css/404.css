@@ -1,0 +1,109 @@
+body{
+    background: #EEEFF4;
+    display: flex;
+}
+
+.div-404{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 16px 32px;
+
+    box-sizing: border-box;
+}
+
+.div-404__img{
+    width: 200px;
+
+    border-radius: 360px;
+}
+
+.div-404__mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-404__titulo{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.div-404__subtitulo{
+    font-weight: 600;
+    font-size: 2rem;
+
+    line-height: 1.5;
+
+    margin-bottom: 32px;
+}
+
+.div-404__texto{
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+    margin-bottom: 32px;
+}
+
+.div-404__btn{
+    cursor: pointer;
+
+    padding: 8px 16px;
+    margin-bottom: 32px;
+
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    background: black;
+    border: 2px solid black;
+}
+
+.div-404__btn:hover{
+    background: #f73131;
+    border-color: #f73131;
+
+    transition: all 150ms;
+}
+
+.div-404__redes{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-404__redes-img{
+    height: 38px;
+    margin: 0 36px;
+}
+
+.div-404__redes-img:hover{
+    filter: invert(54%) sepia(98%) saturate(5760%) hue-rotate(342deg) brightness(95%) contrast(105%);
+
+    transition: all 150ms;
+}
+
+@media screen and (min-width: 768px){
+    .div-404__img{
+        width: 275px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .div-404{
+        flex-direction: row-reverse;
+    }
+
+    .div-404__img{
+        width: 350px;
+        margin-left: 32px;
+    }
+}
