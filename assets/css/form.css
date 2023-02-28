@@ -22,10 +22,26 @@
     border-bottom: solid 2px grey;
     border-radius: 6px;
 
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     padding: 16px;
     padding-bottom: 0;
     color: black;
+}
+
+.form__input--invalid{
+    border: 2px solid #f73131;
+}
+
+.form__input-error{
+    color: #f73131;
+
+    position: absolute;
+    top: 65px;
+    left: 0px;
+}
+
+.form__input-error--message{
+    top: 165px;
 }
 
 .form__input--mensaje{

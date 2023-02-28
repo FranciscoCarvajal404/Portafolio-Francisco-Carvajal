@@ -241,22 +241,25 @@
             <div class="contacto__form">
                 <div class="form__grupo">
                     <label class="form__label" for="name">
-                        <input type="text" id="name" name="name" class="form__input" autocomplete="off" required>
+                        <input type="text" id="name" name="name" class="form__input" autocomplete="off" required data-type="name">
                         <span class="label-span">Nombre</span>
+                        <span class="form__input-error"></span>
                     </label>
                 </div>
 
                 <div class="form__grupo">
                     <label class="form__label" for="mail">
-                        <input type="email" id="mail" name="mail" class="form__input" autocomplete="off" required>
+                        <input type="email" id="mail" name="mail" class="form__input" autocomplete="off" required data-type="email">
                         <span class="label-span">Email</span>
+                        <span class="form__input-error"></span>
                     </label>
                 </div>
 
                 <div class="form__grupo">
                     <label class="form__label" for="mensaje">
-                        <textarea type="text" id="mensaje" name="mensaje" class="form__input form__input--mensaje" autocomplete="off" required cols="30" rows="20"></textarea>
+                        <textarea type="text" id="mensaje" name="mensaje" class="form__input form__input--mensaje" autocomplete="off" required cols="30" rows="20" data-type="message"></textarea>
                         <span class="label-span">Mensaje</span>
+                        <span class="form__input-error form__input-error--message"></span>
                     </label>
                 </div>
             <input type="submit" class="form__btn" id="enviarCorreo">
@@ -277,7 +280,8 @@
         </h2> 
     </footer>
 
+<script src="assets/js/animaciones.js"></script>
+<script type="module" src="assets/js/app.js"></script>
 </body>
 </html>
 
-<script src="assets/js/animaciones.js"></script>
