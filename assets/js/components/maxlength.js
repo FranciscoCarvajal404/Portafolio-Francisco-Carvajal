@@ -5,7 +5,7 @@ function maxlength(input){
     }
     const leng = lenght[inputType];
     input.setAttribute("maxlength", leng)
-    console.log(leng);
+    input.setAttribute("required", "")
 }
     
 

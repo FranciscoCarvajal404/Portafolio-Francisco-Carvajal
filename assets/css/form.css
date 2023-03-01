@@ -105,11 +105,24 @@
     background: black;
     border: 2px solid black;
     border-radius: 6px;
+
+    transition: all 150ms;
 }
 
 .form__btn:hover{
     background: #f73131;
     border-color: #f73131;
+
+    transition: all 150ms;
+}
+
+.form__btn:disabled{
+    background: #acacac;
+    border: 2px solid #acacac;
+
+    color: #5f5f5f;
+
+    opacity: 0.6;
 
     transition: all 150ms;
 }

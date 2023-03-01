@@ -6,12 +6,26 @@ import maxlength from "./components/maxlength.js";
 
 const inputs = document.querySelectorAll(".form__input");
 
+/*Validaciones*/
 inputs.forEach((input) =>{
     input.addEventListener("blur", (input) =>{
         validation(input.target);
     });
+
+    const form = document.querySelector('.contacto__form');
+    const submitBtn = form.querySelector('[type="submit"]');
+
+    submitBtn.disabled = true;
+
+    form.addEventListener('input', function () {
+    submitBtn.disabled = !form.checkValidity();
+
+    console.log(submitBtn.disabled);
+})
 });
 
+
+/*Agregar atributos de forma dinamica*/
 inputs.forEach((input) =>{
     input.addEventListener("focus", (input) =>{
         putPattern(input.target);
@@ -24,6 +38,7 @@ inputs.forEach((input) =>{
     });
 });
 
+/*textarea resize*/
 const textarea = document.querySelector(".form__input--mensaje");
 textarea.addEventListener("input", autoResize, false);
 
