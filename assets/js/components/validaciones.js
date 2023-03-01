@@ -11,6 +11,7 @@ export function validation(input){
         input.classList.add("form__input--invalid")
         input.nextElementSibling.nextElementSibling.innerHTML = showError(inputType, input);
     }
+    console.log(input.validity);
 }
 
 const validators ={
@@ -38,12 +39,19 @@ function showError(inputType, input){
 
 const errorMessage ={
     name:{
-        valueMissing: "Por favor, ingresa tu nombre"
+        valueMissing: "Por favor, ingresa tu nombre",
+        patternMismatch: "Al menos 3 caracteres y máximo 50"
     },
 
     email:{
         valueMissing: "Por favor, ingresa tu correo electrónico",
-        typeMismatch: "El correo no es válido"
+        typeMismatch: "El correo no es válido",
+        patternMismatch: "El correo debe de tener la forma usuario@dominio.tipo"
+    },
+
+    subject:{
+        valueMissing: "Por favor, ingresa el asunto",
+        patternMismatch: "Máximo 50 caracteres"
     },
 
     message:{
