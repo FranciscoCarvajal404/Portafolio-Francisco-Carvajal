@@ -2,6 +2,7 @@ import {validation} from "./components/validaciones.js";
 import putPattern from "./components/pattern.js";
 import autoResize from "./components/resize.js";
 import animateBars from "./components/animateBars.js";
+import maxlength from "./components/maxlength.js";
 
 const inputs = document.querySelectorAll(".form__input");
 
@@ -14,6 +15,12 @@ inputs.forEach((input) =>{
 inputs.forEach((input) =>{
     input.addEventListener("focus", (input) =>{
         putPattern(input.target);
+    });
+});
+
+inputs.forEach((input) =>{
+    input.addEventListener("focus", (input) =>{
+        maxlength(input.target);
     });
 });
 
