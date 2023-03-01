@@ -14,11 +14,11 @@ const validators ={
 }
 
 const regex = {
-    name: "[s\\S]{3,50}",
+    name: "^[s\\S ]{3,50}",
 
     email: "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}",
 
-    subject: "[s\\S]{0,50}",
+    subject: "^[s\\S ]{3,50}",
 
     message: "[s\\S]{0,300}",
 }
