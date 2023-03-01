@@ -12,6 +12,7 @@ inputs.forEach((input) =>{
         validation(input.target);
     });
 
+    /*Validacion submit*/
     const form = document.querySelector('.contacto__form');
     const submitBtn = form.querySelector('[type="submit"]');
 
