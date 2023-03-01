@@ -55,7 +55,8 @@ const errorMessage ={
     },
 
     message:{
-        valueMissing: "Por favor, escribe un mensaje"
+        valueMissing: "Por favor, escribe un mensaje",
+        patternMismatch: "Máximo 300 caracteres"
     },
 
 }

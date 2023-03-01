@@ -18,7 +18,7 @@ const regex = {
 
     email: "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}",
 
-    subject: new RegExp(),
+    subject: "[s\\S]{0,50}",
 
-    message: new RegExp(),
+    message: "[s\\S]{0,300}",
 }
