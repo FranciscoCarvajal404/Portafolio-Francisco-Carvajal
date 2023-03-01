@@ -1,6 +1,3 @@
-
-document.querySelector(".bars-menu").addEventListener("click", animateBars);
-
 var line1_bar = document.querySelector(".bars-menu__line1");
 var line2_bar = document.querySelector(".bars-menu__line2");
 var line3_bar = document.querySelector(".bars-menu__line3");
@@ -13,17 +10,4 @@ function animateBars(){
 
     menu.classList.toggle("menu--active");
 }
-
-
-
-const inputs = document.querySelectorAll('.form__input');
-
-inputs.forEach(input => {
-    input.addEventListener('blur', (event) => {
-    if (event.target.value.length) {
-        event.target.classList.add("full");
-    } else {
-        event.target.classList.remove("full");
-    }
-});
-})
+export default animateBars;
