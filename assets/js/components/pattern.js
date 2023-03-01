@@ -16,7 +16,7 @@ const validators ={
 const regex = {
     name: "[s\\S]{3,50}",
 
-    email: "",
+    email: "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}",
 
     subject: new RegExp(),
 
