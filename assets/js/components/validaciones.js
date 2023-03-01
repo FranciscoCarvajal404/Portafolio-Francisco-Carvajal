@@ -11,7 +11,6 @@ export function validation(input){
         input.classList.add("form__input--invalid")
         input.nextElementSibling.nextElementSibling.innerHTML = showError(inputType, input);
     }
-    console.log(input.validity);
 }
 
 const validators ={

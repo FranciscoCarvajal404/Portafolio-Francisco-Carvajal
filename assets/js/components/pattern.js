@@ -6,7 +6,7 @@ function putPattern(input){
         validators[inputType](input);
     }
     const reg = regex[inputType];
-    input.setAttribute("pattern", reg);
+    input.setAttribute("pattern", reg)
 }
 
 const validators ={
