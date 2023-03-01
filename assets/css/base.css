@@ -18,3 +18,13 @@ body{
 a:hover{
     color: #f73131;
 }
+
+::-moz-selection{ /* Code for Firefox */
+    color: red;
+    background: yellow;
+}
+
+::selection{
+    color: #ffffff;
+    background: rgb(49, 49, 49);
+}
