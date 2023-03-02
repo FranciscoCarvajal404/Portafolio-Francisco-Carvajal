@@ -238,7 +238,7 @@
     <section class="contacto" id="contacto">
         <h2 class="contacto__titulo">Contacto</h2>
         
-        <form action="send.html" class="contacto__form">
+        <form action="https://formsubmit.co/c53d0fed44241b2970e3608031b69223" method="post" class="contacto__form">
             <div class="contacto__form">
                 <div class="form__grupo">
                     <label class="form__label" for="name">
@@ -247,10 +247,11 @@
                         <span class="form__input-error"></span>
                     </label>
                 </div>
+            </div>
 
                 <div class="form__grupo">
                     <label class="form__label" for="mail">
-                        <input type="email" id="mail" name="mail" class="form__input" autocomplete="off" required data-type="email">
+                        <input type="email" id="email" name="email" class="form__input" autocomplete="off" required data-type="email">
                         <span class="label-span">Email</span>
                         <span class="form__input-error"></span>
                     </label>
@@ -258,7 +259,7 @@
 
                 <div class="form__grupo">
                     <label class="form__label" for="subject">
-                        <input type="text" id="subject" name="subject" class="form__input" autocomplete="off" required data-type="subject">
+                        <input type="text" id="subject" name="_subject" class="form__input" autocomplete="off" required data-type="subject">
                         <span class="label-span">Asunto</span>
                         <span class="form__input-error"></span>
                     </label>
@@ -272,15 +273,15 @@
                     </label>
                 </div>
             <input type="submit" class="form__btn" id="enviarCorreo">
+            <input type="hidden" name="_next" value="https://franciscocarvajal404.github.io/Portafolio-Francisco-Carvajal/send.html">
+            <input type="hidden" name="_template" value="table">
         </form>
     </section>
 
     <footer class="footer">
         <div class="footer__redes">
             <a href="https://github.com/FranciscoCarvajal404" target="_blank"><img src="assets/img/github.svg" alt="GitHub" class="footer__img"></a>
-
             <a href="https://www.linkedin.com/in/francisco-carvajal-villegas/" target="_blank"><img src="assets/img/linkedin.svg" alt="LinkedIn" class="footer__img"></a>
-
             <a href="assets/downloads/CV_FCV.pdf" target="_blank"><img src="assets/img/resume.svg" alt="Resume" class="footer__img"></a>
         </div>
         <h2 class="footer__titulo">

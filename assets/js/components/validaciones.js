@@ -39,7 +39,7 @@ function showError(inputType, input){
 const errorMessage ={
     name:{
         valueMissing: "Por favor, ingresa tu nombre",
-        patternMismatch: "Al menos 3 caracteres y máximo 50"
+        patternMismatch: "Máximo 50. Sin caracteres especiales"
     },
 
     email:{
@@ -50,7 +50,7 @@ const errorMessage ={
 
     subject:{
         valueMissing: "Por favor, ingresa el asunto",
-        patternMismatch: "Máximo 50 caracteres"
+        patternMismatch: "Máximo 50 caracteres. Sin caracteres especiales"
     },
 
     message:{

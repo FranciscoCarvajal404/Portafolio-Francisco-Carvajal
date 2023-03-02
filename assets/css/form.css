@@ -67,8 +67,6 @@
     transition: all 0.2s;
     pointer-events: none;
 
-    background-color: white;
-
     border-radius: 6px;
 
     color: var(--color-parrafo);
