@@ -1,4 +1,4 @@
-# Portafolio-Francisco-Carvajal}
+# Portafolio-Francisco-Carvajal
 
 Este es mi portafolio como desarrollador front-end.
 Empleo un diseño parecido al de **Primera-web-personal**, pero añadiendo mas elementos visuales y una mejor distribución.
