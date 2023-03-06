@@ -21,6 +21,5 @@
 }
 
 .footer__img:hover{
-    filter: invert(54%) sepia(98%) saturate(5760%) hue-rotate(342deg) brightness(95%) contrast(105%);
-    transition: all 150ms;
+    filter: invert(32%) sepia(15%) saturate(5930%) hue-rotate(329deg) brightness(104%) contrast(120%);    transition: all 200ms;
 }

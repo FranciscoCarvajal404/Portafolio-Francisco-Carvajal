@@ -7,6 +7,7 @@
 html {   
     min-width: 320px;   
     scroll-behavior: smooth;
+    scroll-padding-top: 70px;
     }
 
 body{
@@ -17,11 +18,12 @@ body{
 
 a:hover{
     color: #f73131;
+    transition: all ease 0.2s;
 }
 
 ::-moz-selection{ /* Code for Firefox */
-    color: red;
-    background: yellow;
+    color: #ffffff;
+    background: rgb(49, 49, 49);
 }
 
 ::selection{
