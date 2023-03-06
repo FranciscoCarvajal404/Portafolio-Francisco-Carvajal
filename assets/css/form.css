@@ -26,6 +26,8 @@
     padding: 16px;
     padding-bottom: 0;
     color: black;
+
+    line-height: normal;
 }
 
 .form__input--mensaje{
