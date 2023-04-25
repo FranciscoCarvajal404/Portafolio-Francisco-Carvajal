@@ -21,7 +21,6 @@ inputs.forEach((input) =>{
     form.addEventListener('input', function () {
     submitBtn.disabled = !form.checkValidity();
 
-    console.log(submitBtn.disabled);
 })
 });
 
